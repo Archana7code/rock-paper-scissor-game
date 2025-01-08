@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+h1 {
+    background-color: #081b31;
+    color: white;
+    height: 5rem;
+    line-height: 5rem;
+}
+.choice {
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+}
+.choice:hover {
+    cursor: pointer;
+    background-color: #081b31;
+}
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+}
+#user-score,#comp-score {
+    font-size: 4rem;
+}
+#msg {
+    background-color: #081b31;
+    color: white;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.msg-cont {
+    margin-top: 5rem;
+}
+
+@media (max-width: 768px) {
+    /* Adjust the header */
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    /* Make the choice buttons smaller and more touch-friendly */
+    .choice {
+        height: 140px;
+        width: 140px;
+    }
+
+    img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .choices {
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+
+    /* Adjust the scoreboard size */
+    .score-board {
+        font-size: 1.5rem;
+        gap: 2rem;
+    }
+
+    #user-score, #comp-score {
+        font-size: 3rem;
+    }
+
+    /* Message text */
+    #msg {
+        font-size: 1.5rem;
+    }
+
+    /* Adjust message container */
+    .msg-cont {
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* For very small screens (e.g. phones in portrait mode) */
+    
+    /* Header font size */
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Make the choice buttons even smaller and easier to tap */
+    .choice {
+        height: 120px;
+        width: 120px;
+    }
+
+    img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .choices {
+        gap: 1.5rem;
+        margin-top: 2.5rem;
+    }
+
+    /* Adjust scoreboard for smaller screens */
+    .score-board {
+        font-size: 1.2rem;
+        gap: 1.5rem;
+    }
+
+    #user-score, #comp-score {
+        font-size: 2.5rem;
+    }
+
+    /* Message text */
+    #msg {
+        font-size: 1.3rem;
+    }
+
+    /* Message container */
+    .msg-cont {
+        margin-top: 2.5rem;
+    }
+}
